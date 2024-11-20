@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="RoshanAcademy.testComponents.Listeners"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="Error Validations Test(failed)">
+    <classes>
+      <class name="RoshanAcademy.SeleniumFrameworkDesign.ErrorValidations">
+        <methods>
+          <include name="loginErrorValidation"/>
+          <include name="tearDown"/>
+          <include name="launchApplication"/>
+        </methods>
+      </class> <!-- RoshanAcademy.SeleniumFrameworkDesign.ErrorValidations -->
+    </classes>
+  </test> <!-- Error Validations Test(failed) -->
+  <test thread-count="5" parallel="tests" name="Submit Order Test(failed)">
+    <classes>
+      <class name="RoshanAcademy.SeleniumFrameworkDesign.StandAloneTest">
+        <methods>
+          <include name="OrderHistoryTest"/>
+          <include name="standAloneTest"/>
+          <include name="tearDown"/>
+          <include name="launchApplication"/>
+        </methods>
+      </class> <!-- RoshanAcademy.SeleniumFrameworkDesign.StandAloneTest -->
+    </classes>
+  </test> <!-- Submit Order Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
