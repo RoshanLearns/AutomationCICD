@@ -38,7 +38,6 @@ import RoshanAcademy.testComponents.BaseTest;
 
 public class StandAloneTest extends BaseTest {
 	String productName = "ZARA COAT 3";
-	//Just comments for jenkins integration
 	
 	@Test(dataProvider="getData", groups= {"Purchase"})
 	public void standAloneTest(HashMap<String, String> input) throws InterruptedException, IOException {
